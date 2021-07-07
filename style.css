@@ -1,0 +1,23 @@
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+  }
+  #wide{
+      outline:3px solid black;
+      width: 113%;
+      height: 50%;
+
+  }
+  #cardBody{
+    outline:3px solid black;
+    width: 115%;
+}
+aside{
+    height: 100vh;
+}

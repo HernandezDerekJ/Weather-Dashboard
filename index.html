@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="historyButtons()">
+    <!--- Header -->
+    <div class="jumbotron jumbotron-fluid bg-primary jumbo_custom">
+      <div class="container ">
+        <h1 class="display-4 ">Weather Dashboard</h1>
+        <span id="timeStamp"></span>
+      </div>
+    </div>
+    <!--- Header -->
+    <!--- Side Search -->
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md-3 p-5 " id="asideContainer">
+          <h2 id="searchHeading" class=" form-group form-label">
+            Search for Weather:
+          </h2>
+          <div id="searchHolder" class="">
+            <div class="">
+                <input class="form-group searchText w-100" id="searchTextID" placeholder="Search Location"/>
+                <div class=" form-group">
+                  <button class="btn-primary w-100 " id="searchBtn" >Search</button>
+                </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="recentSearchBtns form-group" id="localStoredSearch"></div>
+        </aside>
+    <!--- Side Search -->
+
+    <div>
+      <!---  One Day Forecast -->
+      <h2 class="headercurrent">Today's Forecast</h2>
+      <div id="wide">
+        <div class= 'card-body h-50 w-50' id="oneDayHolder">
+          
+        </div>
+      </div>
+      <!---  One Day Forecast -->
+
+      <!---  Five Day Forecast -->
+      <div class=' ' id="fiveDayHolder">
+        <h2 class="headerforcast">5-Day Forecast</h2>
+        <div class=' row ' id="cardBody">
+
+        </div>
+      </div>
+      <!---  Five Day Forecast -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
